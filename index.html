@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANYTIME FITNESS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a
+      class="floating-whatapp-icon"
+      href="https://wa.me/254768286327"
+      target="_blank"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <h3>ANYTIME FITNESS.</h3>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#programs-section">Programs</a></li>
+            <li><a href="#aboutus-section">About us</a></li>
+            <li><a href="#contactus-section">Contact us</a></li>
+            <li><a href="#" class="signup">sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero-section">
+        <h3>Its time to be the main character in your <span>LIFE</span></h3>
+        <p>
+          Anytime Fitness is your gateway to strength and transformation.
+          Whether it’s 5AM or midnight, we’re built for those who refuse limits.
+          Get expert workouts, smart training, nutrition tips, and real
+          motivation to stay consistent. Train anytime. Improve every time.
+        </p>
+        <button>Lets grind</button>
+      </div>
+    </div>
+
+    <section class="programs" id="programs-section">
+      <h3 class="programs-title">Our Programs</h3>
+      <div class="program-container">
+        <div class="card">
+          <img src="images/personal training.jpg" alt="personal training" />
+          <div class="card-content">
+            <h3>Personal Training</h3>
+            <p>
+              1-on-1 elite coaching tailored to your goals and fitness level.
+            </p>
+            <button>Start Training</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/weight lifting.jpg" alt="Weight Lifting" />
+          <div class="card-content">
+            <h3>Weight Lifting</h3>
+            <p>Structured strength programs to build muscle and power.</p>
+            <button>Build Muscle</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/cardio.jpg" alt="Weight Lifting" />
+          <div class="card-content">
+            <h3>Cardio Training</h3>
+            <p>HIIT, endurance sessions, and fat-burning circuits.</p>
+            <button>Start Cardio</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/nutrition.jpg" alt="Weight Lifting" />
+          <div class="card-content">
+            <h3>Nutrition Plans</h3>
+            <p>
+              Meal plans tailored for muscle gain, fat loss, or maintenance.
+            </p>
+            <button>Get My Plan</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/recovery.jpg" alt="Weight Lifting" />
+          <div class="card-content">
+            <h3>Recovery Services</h3>
+            <p>
+              Stretching, mobility, massage therapy & muscle recovery sessions.
+            </p>
+            <button>Book Recovery</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutus" id="aboutus-section">
+      <h3>About Anytime Fitness</h3>
+      <p>
+        At <span>Anytime Fitness</span>, we believe fitness isn’t just about
+        lifting weights it’s about building discipline, confidence, and a
+        stronger mindset. Our mission is to create a space where anyone, at any
+        level, can transform their body and unlock their full potential.
+      </p>
+      <img src="images/aboutus-image.jpg" alt="aboutus-image" />
+      <p>
+        We combine expert coaching, structured training programs, smart
+        nutrition guidance, and recovery support to help you achieve real,
+        lasting results. Whether you're just starting your journey or pushing
+        toward peak performance, we’re here to support you every step of the
+        way. This isn’t just a gym. It’s a community driven by growth,
+        resilience, and consistency. Train anytime. Become unstoppable.
+      </p>
+    </section>
+    <section class="contactus" id="contactus-section">
+      <div id="form">
+        <h3>Contact us form</h3>
+        <form action="" method="post">
+          <div class="inputs">
+            <label for="username">User name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your name ...."
+            />
+          </div>
+          <div class="inputs">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email ...."
+            />
+          </div>
+          <div class="inputs">
+            <label for="massage">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter message ... "
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section class="know-your-bmi">
+      <h3>Know your BMI</h3>
+      <p>
+        What is BMI?
+        <span
+          >(Body Mass Index) is a number that shows if your weight is healthy
+          for your height.</span
+        >
+      </p>
+      <p>Know your's below</p>
+      <div class="bmi-container">
+        <div class="inputs">
+          <label for="height">height (CM)</label>
+          <input
+            type="number"
+            id="height"
+            placeholder="Enter height in CM .."
+          />
+        </div>
+        <div class="inputs">
+          <label for="weight">weight (KG)</label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Enter weight in KG .."
+          />
+        </div>
+        <p id="bmi-results">0.00 kg/m²</p>
+        <button id="calculate-bmi">Calculate BMI</button>
+
+        <div id="ai-response">BMI ANALYSIS ....</div>
+      </div>
+    </section>
+    <footer>
+      <div class="newletter">
+        <h3>Sign up for newsletter</h3>
+        <p>Subscribe to our newsletter to get 15% off.</p>
+        <div class="email-input">
+          <input type="email" id="email" placeholder="Enter Email Address" />
+          <button id="subscribe-btn">Subscribe</button>
+        </div>
+        <div class="social-links">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="programs-card">
+        <h3>Programs</h3>
+        <ul>
+          <li>Personal training</li>
+          <li>Weight lighfting</li>
+          <li>Cardio training</li>
+          <li>Nutrition plans</li>
+          <li>Recovery services</li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <ul>
+          <p><i class="fa-solid fa-location-dot"></i>Anytime Fitness</p>
+          <p><i class="fa-solid fa-phone"></i>+254 737436457</p>
+          <p><i class="fa-solid fa-envelope"></i>anytimefitness@gmail.com</p>
+          <p><i class="fa-solid fa-circle-dot"></i>Mon - Fri 5AM - 11PM</p>
+          <p><i class="fa-solid fa-circle-dot"></i>Sat - Sun 7AM - 9AM</p>
+        </ul>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </body>
+</html>
