@@ -28,7 +28,9 @@ body {
 .floating-whatapp-icon:hover {
   scale: 1.1;
 }
-
+.navbar #sidebar-active {
+  display: none;
+}
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -96,6 +98,7 @@ nav ul li a:hover {
   font-size: x-large;
   color: #ccc;
   text-transform: capitalize;
+  text-align: center;
 }
 .hero-section p {
   color: #fff;
@@ -235,59 +238,57 @@ footer .newletter .email-input {
   color: #ccc;
 }
 
-.know-your-bmi .bmi-container{
-    padding: 20px;
-    text-align: left;
+.know-your-bmi .bmi-container {
+  padding: 20px;
+  text-align: left;
 }
-.know-your-bmi .bmi-container #bmi-results{
-    padding: 10px;
+.know-your-bmi .bmi-container #bmi-results {
+  padding: 10px;
 }
-#ai-response{
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #000;
-    font-family: sans-serif;
-    height: auto;
+#ai-response {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #000;
+  font-family: sans-serif;
+  height: auto;
 }
-#ai-response p{
-    color: #fff;
+#ai-response p {
+  color: #fff;
 }
-#ai-response strong{
-    color: #11a368;
-}
-
-
-.bmi-container .inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 10px;
-    gap: 10px;
-}
-.bmi-container .inputs label{
-    font-family: sans-serif;
-}
-.bmi-container .inputs input{
-    width: 80%;
-    border: 0;
-    border-radius: 5px;
-    padding: 6px;
-    border: 1px solid #555;
-    outline: none;
-}
-.bmi-container button{
-    padding: 10px;
-    margin-left: 10px;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #11a368;
-    cursor: pointer;
-}
-.bmi-container button:hover{
-    opacity: .6;
+#ai-response strong {
+  color: #11a368;
 }
 
+.bmi-container .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+}
+.bmi-container .inputs label {
+  font-family: sans-serif;
+}
+.bmi-container .inputs input {
+  width: 80%;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px;
+  border: 1px solid #555;
+  outline: none;
+}
+.bmi-container button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #11a368;
+  cursor: pointer;
+}
+.bmi-container button:hover {
+  opacity: 0.6;
+}
 
 .contactus {
   width: 100%;
@@ -430,4 +431,64 @@ footer .newletter .email-input {
 
 .card-content button:hover {
   background: #ff5c2a;
+}
+@media (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  footer .newletter {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  footer .newletter .email-input {
+    display: flex;
+    border: 1px solid #ccc;
+  }
+  .newletter .social-links {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .navbar #sidebar-active {
+    display: none;
+  }
+
+  .navbar nav {
+    position: absolute;
+    background-color: #121212;
+    right: 5%;
+    top: 3%;
+    padding: 20px;
+    border: 1px solid #11a368;
+    border-radius: 5px;
+    scale: 0;
+    transition: all 0.2s;
+  }
+  #sidebar-active:checked ~ nav {
+    scale: 1;
+  }
+  .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 20px;
+  }
 }
